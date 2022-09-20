@@ -1,0 +1,11 @@
+package.json export-ignore
+package-lock.json export-ignore
+composer.json export-ignore
+composer-lock.json export-ignore
+gulpfile.js export-ignore
+tsconfig.json export-ignore
+developers.md export-ignore
+tests export-ignore
+.github export-ignore
+phpcs.xml export-ignore
+assets/src export-ignore

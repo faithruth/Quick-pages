@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ruleset name="Quick Pages">
+	<config name="minimum_supported_wp_version" value="4.9"/>
+	<arg name="extensions" value="php" />
+	<file>.</file>
+
+	<rule ref="WordPress">
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+		<!-- <exclude name="Generic.Arrays.DisallowShortArraySyntax.Found" />
+		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EndLine" />
+		<exclude name="Squiz.Commenting.ClassComment.Missing" />
+		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment" /> -->
+	</rule>
+
+	<!-- Let's also check that everything is properly documented. -->
+	<rule ref="WordPress-Docs"/>
+
+	<exclude-pattern>gulpfile.js</exclude-pattern>
+	<exclude-pattern>/assets/</exclude-pattern>
+	<exclude-pattern>/vendor/</exclude-pattern>
+	<exclude-pattern>/languages/</exclude-pattern>
+</ruleset>

@@ -1,0 +1,20 @@
+{
+    "name": "faithruth/quick-pages",
+    "description": "Create posts, pages and cpts with out redirecting to editor page.",
+    "type": "project",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Imokol Faith Ruth",
+            "email": "faithruth27@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"QuickPages\\": "./core"}
+    },
+    "scripts": {
+        "phpcs": "phpcs ./ --standard=WordPress -n -p -l",
+        "phpcbf": "phpcbf ./ --standard=WordPress -n -p"
+    }
+}
